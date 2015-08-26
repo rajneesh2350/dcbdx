@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form url="orange_you_glad.php"
+ window="_self"
+ method="POST"
+ fontname="MS Sans Serif"
+ width="900"
+ height="2796"
+ bkcolor="0xDDDFB3"
+ transparent="f"
+ fontcolor="0x000000"
+ outlinecolor="0xFFFFFF"
+ themecolor="0xFFFF99"
+ fontcolor2="#000000"
+ bkcolor2="#FFFFFF"
+ includeresults="false"
+ emailuser="true"
+ verifymessage="The E-Mail address you entered does not match !"
+ reqmessage="One or More Fields are Required !"
+ invalidemailmsg="does not appear to be a valid e-mail address. Would you like to change it?"
+ transition="0"
+ autoresponseincluderesults="t"
+ autoresponseaddtotop="f"
+ usephp="true"
+ disableclicktoactiveprompt="true"
+ extensions="*.txt;*.gif;*.jpg;*.jpeg;*.zip;*.doc;*.png;*.pdf;*.rtf;*.html;*.docx;*.xslx"
+>
+
+<hidden
+ name="thankyoupage"
+ value="http://www.dcbdx.in"
+></hidden>
+
+<hidden
+ name="subject"
+ value=""
+></hidden>
+
+<image
+ image="color1_2.jpg"
+ x="125"
+ y="100"
+></image>
+
+<submitbutton
+ name="Submit Button"
+ x="325"
+ y="1153"
+ w="164"
+ h="45"
+ label="Submit"
+ fontname="Arial"
+ fontcolor="0x000000"
+ image="button.png"
+  fontsize="12"
+></submitbutton>
+
+<textinput
+ name="Name"
+ x="100"
+ y="25"
+ w="305"
+ h="22"
+ initvalue=""
+ maxchars="100"
+ bkcolor="0xFFFFFF"
+  fontname="Arial"
+  fontcolor="0x000000"
+ required="true"
+ editable="true"
+>
+</textinput>
+
+<textinput
+ name="Email"
+ x="100"
+ y="50"
+ w="306"
+ h="22"
+ initvalue=""
+ maxchars="100"
+ bkcolor="0xFFFFFF"
+  fontname="Arial"
+  fontcolor="0x000000"
+ emailbox="true"
+ editable="true"
+  restrict="email"
+>
+</textinput>
+
+<textinput
+ name="Website"
+ x="100"
+ y="75"
+ w="307"
+ h="22"
+ initvalue=""
+ maxchars="100"
+ bkcolor="0xFFFFFF"
+  fontname="Arial"
+  fontcolor="0x000000"
+ required="true"
+ editable="true"
+  restrict="phone"
+>
+</textinput>
+
+<textarea
+ name="Message"
+ x="500"
+ y="25"
+ w="310"
+ h="71"
+ initvalue=""
+ wordwrap="true"
+ editable="true"
+ bkcolor="0xFFFFFF"
+  fontsize="12"
+  fontname="Arial"
+  fontcolor="0x000000"
+></textarea>
+
+<label
+ name="My Text 2"
+ x="25"
+ y="25"
+ w="44"
+ h="23"
+ text="Name"
+  fontname="Comic Sans MS"
+  fontcolor="0x008080"
+  fontsize="16"
+></label>
+
+<label
+ name="My Text 3"
+ x="25"
+ y="50"
+ w="50"
+ h="23"
+ text="E-mail"
+  fontname="Comic Sans MS"
+  fontcolor="0x008080"
+  fontsize="16"
+></label>
+
+<label
+ name="My Text 4"
+ x="25"
+ y="75"
+ w="55"
+ h="23"
+ text="Mobile"
+  fontname="Comic Sans MS"
+  fontcolor="0x008080"
+  fontsize="16"
+></label>
+
+<label
+ name="My Text 5"
+ x="425"
+ y="25"
+ w="65"
+ h="23"
+ text="Message"
+  fontname="Comic Sans MS"
+  fontcolor="0x008080"
+  fontsize="16"
+></label>
+
+<captcha
+ name="My Captcha 1"
+ x="327"
+ y="1050"
+ w="133"
+ h="100"
+ text="Enter Key Here:"
+ fnt="Arial"
+ fntclr="0x000000"
+ fntsize="11"
+ bkbdrcolor="0x000000"
+ bkfillclr="0xFFFFFF"
+ bkdobdr="t"
+ bkbdrsolid="t"
+ bkdobk="t"
+ bkfillalpha="100"
+ message="Incorrect key!"
+></captcha>
+
+<label
+ name="My Text 6"
+ x="75"
+ y="25"
+ w="11"
+ h="18"
+ text="*"
+  fontname="Comic Sans MS"
+  fontcolor="0xFF0000"
+  fontsize="13"
+></label>
+
+<label
+ name="My Text 7"
+ x="75"
+ y="75"
+ w="11"
+ h="18"
+ text="*"
+  fontname="Comic Sans MS"
+  fontcolor="0xFF0000"
+  fontsize="13"
+></label>
+
+<checkbox
+ name="My Checkbox 1"
+ x="125"
+ y="225"
+ w="94"
+ h="19"
+ label="Your Text Here"
+ labelPos="right"
+ value="checked"
+  fontsize="12"
+  fontname="Arial"
+  fontcolor="0x000000"
+></checkbox>
+
+<checkbox
+ name="My Checkbox 2"
+ x="275"
+ y="225"
+ w="94"
+ h="19"
+ label="Your Text Here"
+ labelPos="right"
+ value="checked"
+  fontsize="12"
+  fontname="Arial"
+  fontcolor="0x000000"
+></checkbox>
+
+<checkbox
+ name="My Checkbox 3"
+ x="400"
+ y="225"
+ w="94"
+ h="19"
+ label="Your Text Here"
+ labelPos="right"
+ value="checked"
+  fontsize="12"
+  fontname="Arial"
+  fontcolor="0x000000"
+></checkbox>
+
+<textinput
+ name="My Input Box 1"
+ x="125"
+ y="250"
+ w="108"
+ h="22"
+ initvalue=""
+ maxchars="25"
+ bkcolor="0xFFFFFF"
+  fontname="Arial"
+  fontcolor="0x000000"
+ editable="true"
+>
+</textinput>
+
+<textinput
+ name="My Input Box 2"
+ x="254"
+ y="250"
+ w="108"
+ h="22"
+ initvalue=""
+ maxchars="25"
+ bkcolor="0xFFFFFF"
+  fontname="Arial"
+  fontcolor="0x000000"
+ editable="true"
+>
+</textinput>
+
+</form>

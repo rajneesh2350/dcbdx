@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form url="orange_you_glad2.php"
+ window="_self"
+ method="POST"
+ fontname="MS Sans Serif"
+ width="700"
+ height="3000"
+ bkcolor="0xFFFFFF"
+ transparent="f"
+ fontcolor="0x000000"
+ outlinecolor="0xFFFFFF"
+ themecolor="0xFFFF99"
+ fontcolor2="#000000"
+ bkcolor2="#FFFFFF"
+ includeresults="false"
+ emailuser="false"
+ verifymessage="The E-Mail address you entered does not match !"
+ reqmessage="One or More Fields are Required !"
+ invalidemailmsg="does not appear to be a valid e-mail address. Would you like to change it?"
+ transition="0"
+ autoresponseincluderesults="f"
+ autoresponseaddtotop="f"
+ usephp="true"
+ disableclicktoactiveprompt="true"
+ extensions="*.txt;*.gif;*.jpg;*.jpeg;*.zip;*.doc;*.png;*.pdf;*.rtf;*.html;*.docx;*.xslx;"
+>
+
+<hidden
+ name="subject"
+ value=""
+></hidden>
+
+<image
+ image="color1_2.jpg"
+ x="25"
+ y="175"
+></image>
+
+<label
+ name="My Text 1"
+ x="30"
+ y="25"
+ w="127"
+ h="22"
+ text="Get in Touch."
+ fontbold="bold"
+  fontname="Arial"
+  fontcolor="0xFFFFFF"
+  fontsize="19"
+></label>
+
+<submitbutton
+ name="Submit Button"
+ x="250"
+ y="125"
+ w="164"
+ h="45"
+ label="Submit"
+ fontname="Arial"
+ fontcolor="0x000000"
+ image="button.png"
+  fontsize="12"
+></submitbutton>
+
+<label
+ name="My Text 2"
+ x="23"
+ y="18"
+ w="41"
+ h="16"
+ text="Name"
+ fontbold="bold"
+  fontname="Arial"
+  fontcolor="0x797873"
+  fontsize="13"
+></label>
+
+<textinput
+ name="Name"
+ x="73"
+ y="17"
+ w="342"
+ h="22"
+ initvalue=""
+ maxchars="25"
+ bkcolor="0xFFFFFF"
+  fontname="Arial"
+  fontcolor="0x000000"
+ editable="true"
+>
+</textinput>
+
+<textinput
+ name="Email"
+ x="73"
+ y="53"
+ w="342"
+ h="22"
+ initvalue=""
+ maxchars="25"
+ bkcolor="0xFFFFFF"
+  fontname="Arial"
+  fontcolor="0x000000"
+ emailbox="true"
+ editable="true"
+  restrict="email"
+>
+</textinput>
+
+<label
+ name="My Text 3"
+ x="20"
+ y="53"
+ w="44"
+ h="16"
+ text="E-mail"
+ fontbold="bold"
+  fontname="Arial"
+  fontcolor="0x797873"
+  fontsize="13"
+></label>
+
+<label
+ name="My Text 4"
+ x="10"
+ y="87"
+ w="55"
+ h="16"
+ text="Website"
+ fontbold="bold"
+  fontname="Arial"
+  fontcolor="0x797873"
+  fontsize="13"
+></label>
+
+<textinput
+ name="Website"
+ x="73"
+ y="87"
+ w="341"
+ h="22"
+ initvalue=""
+ maxchars="25"
+ bkcolor="0xFFFFFF"
+  fontname="Arial"
+  fontcolor="0x000000"
+ editable="true"
+>
+</textinput>
+
+<label
+ name="My Text 5"
+ x="425"
+ y="0"
+ w="59"
+ h="16"
+ text="Message"
+ fontbold="bold"
+  fontname="Arial"
+  fontcolor="0x797873"
+  fontsize="13"
+></label>
+
+<textarea
+ name="Message"
+ x="425"
+ y="18"
+ w="262"
+ h="121"
+ initvalue=""
+ wordwrap="true"
+ editable="true"
+ bkcolor="0xFFFFFF"
+  fontsize="12"
+  fontname="Arial"
+  fontcolor="0x000000"
+></textarea>
+
+</form>
