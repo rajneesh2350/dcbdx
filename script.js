@@ -1138,21 +1138,44 @@ jQuery(function($) {
 
             if ($.support.transition) {
                 helper = new BackgroundHelper();
-                helper.init("fade", "next", $(".art-slide-item", inner).first().css($.support.transition.prefix + "transition-duration"));
+                helper.init("vertical", "prev", $(".art-slide-item", inner).first().css($.support.transition.prefix + "transition-duration"));
                 inner.children().each(function () {
-                    helper.processSlide($(this));
+                    helper.processSlide($(this), true);
                 });
 
+                var items = helper.items(helper.current(0), helper.next(0));
+                helper.setBackground(inner, items);
+                helper.setPosition(inner, items);
+
+                slideContainer.on("beforeSlide", function () {
+                    var activeItem = $(".active", this),
+                        nextItem = $(".next, .prev", this),
+                        activePos = $(".art-slide-item", this).index(activeItem),
+                        nextPos = $(".art-slide-item", this).index(nextItem);
+
+                    var currentItems = helper.items(helper.current(activePos), helper.current(nextPos));
+
+                    helper.transition(inner, false);
+                    helper.setBackground(inner, currentItems);
+                    helper.setPosition(inner, currentItems);
+                    if (inner.length) {
+                        tmp = inner.get(0).offsetHeight;
+                    }
+
+                    var movedCurrentItems = helper.items(helper.current(activePos), helper.current(nextPos), true);
+                    helper.transition(inner, true);
+                    helper.setPosition(inner, movedCurrentItems);
+                });
             }
 
 
             inner.children().eq(0).addClass("active");
             slideContainer.slider({
-                pause: 2600,
+                pause: 5600,
                 speed: 600,
                 repeat: true,
-                animation: "fade",
-                direction: "next",
+                animation: "vertical",
+                direction: "prev",
                 navigator: slideContainer.siblings(".art-slidenavigatorheader"),
                 helper: helper                
             });
